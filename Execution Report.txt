@@ -1,0 +1,29 @@
+Execution Report
+
+Results
+
+1)Total Records Processed: 38
+
+2)Records Excluded
+
+Excluded Records: 5
+
+Reasons for Exclusion:
+Null UserID[1 data entry]: Records with null UserID were filtered out.
+Duplicates [4 data entries]: Duplicate records based on UserID were removed.
+
+csv file: 33
+initial prod: 10
+Total = 43
+Excluded: 5
+Processed: 38
+
+3)Challenges and Solutions
+
+Data Quality Issues:
+Challenge: The CSV file contained empty strings, null values, and invalid formats.
+Solution: Implemented data cleaning in the Script Component to handle invalid entries and convert them to default values.
+
+Data Conversion Errors:
+Challenge: Issues with converting data types, particularly PurchaseTotal turning into 0 or null.
+Solution: Adjusted the script to correctly handle and validate numeric fields, ensuring proper conversion and default values.
