@@ -14,7 +14,7 @@ This project involves processing data from a CSV file into a SQL database using 
 1. **Run `SettingUp.sql`** to create the SQL database and tables.
 2. **Load Initial Data**: Execute `InitialData.sql` to populate the `prod.user` table.
 3. **Run SSIS Package**:
-   - Open `KoreAssignment_Ravirajsinh_Jadeja.dtsx` in Visual Studio.
+   - Open `KoreAssignment_Ravirajsinh_Jadeja.dtproj` in Visual Studio and open Package.
    - Execute the package to process the CSV data:
      - Load data from the CSV file.
      - Clean and transform data using the Script Component.
